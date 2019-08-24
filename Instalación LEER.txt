@@ -1,0 +1,7 @@
+Primero ejecutar el archivo: BD ESQUEMA (Cotiene la creación de la base de datos con las tablas)
+Segundo ejecutar el archivo: sql-server-sakila-insert-data.sql (Contiene los datos de la base de datos)
+
+Una vez instalada la base de datos ejecutar en ella el siguiente código: 
+update payment set amount =convert(numeric(10,2),(amount*30))
+
+Listo!!!!

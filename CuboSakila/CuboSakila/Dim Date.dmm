@@ -1,0 +1,285 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a9274421-0ffa-4e73-88a6-844f7321b14e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Date</ID>
+  <Name>Dim Date</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="c1bea556-5c2d-4159-8c62-9c50a4009cff">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Sakila</CubeID>
+    <CubeDimensionID>Dim Date</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4a894849-cd54-41da-b231-c49b5cef3057">
+      <ID>Payment Date</ID>
+      <Name>Payment Date</Name>
+      <IsKey>true</IsKey>
+      <Type>Date</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="a0531237-0528-4e45-905c-4ca85f35cf5a">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Payment Date</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ac433f87-0e1f-4295-8357-c0bc6e2df71a">
+      <ID>Año</ID>
+      <Name>Año</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="459cf608-1e5f-4617-b18b-2ef66c7dec97">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Año</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0263d4a5-922a-44e5-992f-8c4a909693a1">
+      <ID>Cuatrimenstre</ID>
+      <Name>Cuatrimenstre</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="e0316139-a119-4cf0-9924-46fd651ea579">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Cuatrimenstre</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9827b2a4-907f-4d02-a783-e6b47645ef3f">
+      <ID>Día</ID>
+      <Name>Día</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="055458aa-6eef-4404-94d4-b64e2742f281">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Día</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="a570bf5f-8a43-4e14-b9f0-2cf7cfd39443">
+      <ID>Mes</ID>
+      <Name>Mes</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="855923ea-1d45-4388-9920-7300f0e546a7">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Mes</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0a79aeaa-150e-440b-bd9f-ad203a345458">
+      <ID>Nombre Día</ID>
+      <Name>Nombre Día</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="2d492421-4f76-451e-8667-4f0e4692dbe9">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Nombre Día</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="15f578dd-2730-4fe8-bfab-bddeb72daead">
+      <ID>Nombre Mes</ID>
+      <Name>Nombre Mes</Name>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="9000d961-b185-4c19-ae19-565d71006cf4">
+        <CubeID>Sakila</CubeID>
+        <CubeDimensionID>Dim Date</CubeDimensionID>
+        <AttributeID>Nombre Mes</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Discrete</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="2c7e0c1c-95ae-4fb6-8cfc-d8c440eec7f2">
+      <ID>Fact Payment Count</ID>
+      <Name>Fact Payment Count</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="474f7e2f-1f00-451b-80f8-94a06a0ecfa1">
+        <MeasureID>Fact Payment Count</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="11172fec-30f6-4a96-bfb9-0f80d6460fef">
+      <ID>Monto Total</ID>
+      <Name>Monto Total</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="98992a7b-3621-49fc-b250-49d7d8ca6ce8">
+        <MeasureID>Monto Total</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4da38e37-cb95-47d0-91f6-b2a889d42dff">
+      <ID>Total Costo Reemplazo</ID>
+      <Name>Total Costo Reemplazo</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="bd53c552-2105-4590-9f23-a0b9283488e1">
+        <MeasureID>Total Costo Reemplazo</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7a07929e-f9f5-4b84-8bb2-be6ace4e8d1f">
+      <ID>Total Duracion</ID>
+      <Name>Total Duracion</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="ce9ee4ff-6196-4c92-86b4-2fe0472fe17d">
+        <MeasureID>Total Duracion</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="547712eb-87d3-4ded-a686-5342a53e80a1">
+      <ID>Total Duracion Renta</ID>
+      <Name>Total Duracion Renta</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="3e414c66-b5a6-4568-af5e-ff899877048b">
+        <MeasureID>Total Duracion Renta</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="7e6f5b64-26e2-401f-a6be-7e0ef332dd81">
+      <ID>Total Tasa Renta</ID>
+      <Name>Total Tasa Renta</Name>
+      <Type>Double</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="b2010d26-6cbe-4975-96ed-86f3d14756d6">
+        <MeasureID>Total Tasa Renta</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="540daaea-be13-4c5b-a23c-88adffc5b4b1">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="51cc9fbe-4852-4b60-b206-d340d700036e">
+          <ID>Payment Date</ID>
+          <Name>Payment Date</Name>
+          <SourceColumnID>Payment Date</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="acd6b617-30fb-4fbf-805d-2c51b1561bf9">
+          <ID>Año</ID>
+          <Name>Año</Name>
+          <SourceColumnID>Año</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="a68bd697-0fc1-4418-bc1b-52a0f700ae25">
+          <ID>Cuatrimenstre</ID>
+          <Name>Cuatrimenstre</Name>
+          <SourceColumnID>Cuatrimenstre</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="62ede4f6-f42e-462d-8457-1787c77cf109">
+          <ID>Día</ID>
+          <Name>Día</Name>
+          <SourceColumnID>Día</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="5b92b131-d525-4522-9416-bd408bd642b1">
+          <ID>Mes</ID>
+          <Name>Mes</Name>
+          <SourceColumnID>Mes</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="5ac5fb7c-df21-4ba4-abc1-e9ffb1e14da3">
+          <ID>Nombre Día</ID>
+          <Name>Nombre Día</Name>
+          <SourceColumnID>Nombre Día</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b26d9b7e-ecec-416e-8eeb-fb36b51890ff">
+          <ID>Nombre Mes</ID>
+          <Name>Nombre Mes</Name>
+          <SourceColumnID>Nombre Mes</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7ffe7c1d-1ab7-40f9-ba0d-d31a9b747501">
+          <ID>Fact Payment Count</ID>
+          <Name>Fact Payment Count</Name>
+          <SourceColumnID>Fact Payment Count</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="20165dad-3e03-4707-b5f3-347ab3f4313f">
+          <ID>Monto Total</ID>
+          <Name>Monto Total</Name>
+          <SourceColumnID>Monto Total</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="ca66b463-26dd-48e6-bc1a-5034d3f50fd9">
+          <ID>Total Costo Reemplazo</ID>
+          <Name>Total Costo Reemplazo</Name>
+          <SourceColumnID>Total Costo Reemplazo</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="a0883eaf-1125-4b0b-b99d-4b3f163390ad">
+          <ID>Total Duracion</ID>
+          <Name>Total Duracion</Name>
+          <SourceColumnID>Total Duracion</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="4c0c21b3-6647-4b3f-94e6-29eaffafd4ec">
+          <ID>Total Duracion Renta</ID>
+          <Name>Total Duracion Renta</Name>
+          <SourceColumnID>Total Duracion Renta</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="ce3858d0-a982-48d5-ba85-83129df3d328">
+          <ID>Total Tasa Renta</ID>
+          <Name>Total Tasa Renta</Name>
+          <SourceColumnID>Total Tasa Renta</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>
